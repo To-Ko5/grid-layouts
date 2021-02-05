@@ -3,10 +3,25 @@
   margin: 0 auto;
 }
 
+// Rows and columns
+// .grid {
+//   display: grid;
+//   grid-template-rows: 200px 200px 200px;
+//   grid-template-columns: 40% 200px auto;
+// }
+
+// FR unit
 .grid {
+  background-color: cornsilk;
+  height: 600px;
   display: grid;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns: 40% 200px auto;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
+
+  /*
+   total space = 100%
+   1fr = 1/3
+  */
 }
 
 .item {
