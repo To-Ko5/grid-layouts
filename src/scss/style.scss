@@ -4,9 +4,12 @@
 }
 
 .grid {
-  display: inline-grid;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 40% 200px auto;
 }
 
 .item {
   background-color: aquamarine;
+  padding: 20px;
 }
