@@ -34,6 +34,11 @@
   // grid-template-columns: repeat(2, 1fr 200px);
   // grid-template-columns: 100px minmax(100px, 300px);
   grid-template-columns: repeat(3, minmax(100px, 300px));
+  // grid-row-gap: 20px;
+  // grid-column-gap: 10px;
+  // grid-gap: 20px 10px;
+  row-gap: 20px;
+  column-gap: 20px;
 
   /*
    repeat(num of cols, size)
