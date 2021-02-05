@@ -1,0 +1,15 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "sass": "^1.32.6",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "scss": "sass src/scss:public/css",
+    "sass-watch": "sass --watch src/scss:public/css"
+  }
+}
