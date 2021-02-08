@@ -79,6 +79,7 @@
   // grid-template-columns: max-content 1fr 1fr;
   grid-template-rows: minmax(300px, min-content) 100px;
   grid-gap: 20px;
+  // コンテンツの幅に合わせる
 }
 
 .item {
