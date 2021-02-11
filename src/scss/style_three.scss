@@ -1,48 +1,65 @@
+// .container {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-template-areas:
+//     "a a a b"
+//     "c c c b"
+//     ". footer footer .";
+//   grid-gap: 10px;
+//   @media (max-width: 500px) {
+//     grid-template-areas:
+//       "a a a b"
+//       "c c c b"
+//       "footer footer footer footer";
+//   }
+// }
+
+// .item {
+//   background-color: cyan;
+//   padding: 20px;
+//   font-size: 20px;
+// }
+
+// .item-1 {
+//   background-color: darkred;
+//   // grid lineで幅を変更できる
+//   // grid-column-start: 2;
+//   // grid-column-end: 5;
+//   // grid-row-start: 2;
+//   // grid-row-end: 3;
+
+//   // ショートハンド
+//   // grid-column: 2 / -3;
+//   // grid-row: -2 / 5;
+//   // grid-column: span 2;
+//   // grid-row: 2 / span 3;
+//   // grid-area: 1 / 2 / 3 / 4;
+//   grid-area: a;
+// }
+
+// .item-2 {
+//   background-color: blue;
+//   grid-area: footer;
+// }
+
+// .item-4 {
+//   background-color: yellow;
+//   grid-area: b;
+// }
+
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "a a a b"
-    "c c c b"
-    ". footer footer .";
+  grid-template-columns: [col-1]1fr [col-2]1fr [col-3] 1fr[col-4];
+  grid-template-rows: 50px 50px 50px;
   grid-gap: 10px;
-  @media (max-width: 500px) {
-    grid-template-areas:
-      "a a a b"
-      "c c c b"
-      "footer footer footer footer";
-  }
 }
 
 .item {
-  background-color: cyan;
-  padding: 20px;
+  background-color: darksalmon;
   font-size: 20px;
 }
 
 .item-1 {
-  background-color: darkred;
-  // grid lineで幅を変更できる
-  // grid-column-start: 2;
-  // grid-column-end: 5;
-  // grid-row-start: 2;
-  // grid-row-end: 3;
-
-  // ショートハンド
-  // grid-column: 2 / -3;
-  // grid-row: -2 / 5;
-  // grid-column: span 2;
-  // grid-row: 2 / span 3;
-  // grid-area: 1 / 2 / 3 / 4;
-  grid-area: a;
-}
-
-.item-2 {
   background-color: blue;
-  grid-area: footer;
-}
-
-.item-4 {
-  background-color: yellow;
-  grid-area: b;
+  grid-column: col-1 / col-3;
 }
