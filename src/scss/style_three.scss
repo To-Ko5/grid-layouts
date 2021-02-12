@@ -49,10 +49,8 @@
 
 .container {
   display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
   grid-gap: 10px;
 }
 
@@ -61,23 +59,16 @@
   font-size: 20px;
 }
 
-.item-1 {
-  background-color: blue;
-  grid-area: header;
-}
-
-.item-2 {
-  background-color: yellow;
-  grid-area: main;
-  grid-template-rows: 500px;
-}
-
 .item-3 {
-  background-color: yellowgreen;
-  grid-area: footer;
+  background-color: rgba(255, 140, 0, 0.5);
+  z-index: 100;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
 .item-4 {
   background-color: red;
-  grid-area: sidebar;
+  z-index: 10;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
