@@ -1,0 +1,25 @@
+.grid {
+  background-color: #ededed;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 10px;
+  // justify-items: center;
+  // align-items: center;
+  // justify-items: stretch;
+  // justify-items: stretch;
+  // place-items: center end; // ショートハンド
+
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.item {
+  background-color: blueviolet;
+  font-size: 20px;
+}
+
+.item-2 {
+  justify-self: center;
+  align-self: center;
+}
