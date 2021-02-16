@@ -2,6 +2,7 @@ html,
 body,
 h1,
 h2,
+h3,
 p,
 ul,
 li {
@@ -113,4 +114,50 @@ body {
     align-self: center;
     text-align: center;
   }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 35vw));
+  grid-template-rows: 20rem 1fr 10rem;
+  grid-gap: 2rem;
+  justify-content: center;
+  &__title {
+    grid-column: span 2;
+    text-align: center;
+    align-self: center;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 10rem 1fr min-content;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__item-line {
+    width: 100%;
+    border-bottom: 2px solid #ededed;
+    align-self: center;
+  }
+  &__item-container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    h3 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+  }
+  &__item-price {
+    color: red;
+  }
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  background-color: cyan;
 }
