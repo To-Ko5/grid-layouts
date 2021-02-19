@@ -178,3 +178,60 @@ body {
     padding: 20px;
   }
 }
+
+.gallery {
+  display: grid;
+  grid-template-rows: 20rem 1fr 10rem;
+  &__title {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 10rem);
+  grid-gap: 1rem;
+}
+
+.img-1 {
+  background-color: bisque;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img-2 {
+  background-color: rgb(182, 100, 0);
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img-3 {
+  background-color: rgb(118, 212, 255);
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.img-4 {
+  background-color: rgb(255, 102, 209);
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.img-5 {
+  background-color: rgb(255, 88, 88);
+  grid-column: span 2;
+}
+
+.img-6 {
+  background-color: rgb(219, 255, 88);
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.img-7 {
+  background-color: rgb(145, 255, 163);
+  grid-column: span 2;
+  grid-row: span 3;
+}
