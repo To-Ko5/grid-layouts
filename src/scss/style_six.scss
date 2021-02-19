@@ -235,3 +235,32 @@ body {
   grid-column: span 2;
   grid-row: span 3;
 }
+
+.delivery {
+  background-color: #ededed;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 35vw));
+  grid-template-rows: 20rem;
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    grid-column: span 2;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    justify-content: center;
+  }
+  &__link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+  }
+}
+
+
