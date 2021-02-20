@@ -320,3 +320,68 @@ body {
 .read-more {
   color: crimson;
 }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 60rem);
+  grid-template-rows: 1fr 5rem;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.form {
+  border: 1px solid #ededed;
+  padding: 2rem;
+  text-align: center;
+  &__title {
+    font-size: 2rem;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: rgb(255, 93, 93);
+}
+
+input,
+textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: lightcoral;
+}
+
+.contact-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  &__img {
+    &--one {
+      background-color: darkgreen;
+      grid-column: span 2;
+    }
+    &--two {
+      background-color: darkseagreen;
+    }
+    &--three {
+      background-color: darkslateblue;
+    }
+  }
+}
