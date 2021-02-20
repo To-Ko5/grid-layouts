@@ -55,6 +55,73 @@ body {
   padding: 1rem 2.5rem;
 }
 
+.menu-button,
+.menu-button__icon,
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-button {
+  width: 5rem;
+  height: 5rem;
+  z-index: 60;
+  opacity: 0;
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    cursor: pointer;
+    z-index: 50;
+    right: 1rem;
+    &--span {
+      display: block;
+      width: 3.5rem;
+      height: 1.5px;
+      background-color: #fafafa;
+      &::before,
+      &::after {
+        content: "";
+        width: 3.5rem;
+        height: 1.5px;
+        position: absolute;
+        background-color: #fafafa;
+      }
+      &::before {
+        top: 1.3rem;
+      }
+      &::after {
+        bottom: 2rem;
+      }
+    }
+  }
+}
+
+nav {
+  background-color: tomato;
+  width: 30rem;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateX(100%);
+}
+
+.menu-button:checked ~ nav {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+.gnav {
+  &__link {
+    color: #fafafa;
+    display: block;
+    margin-bottom: 2.4rem;
+  }
+}
+
 .banner {
   background-color: #ededed;
   min-height: calc(100vh - 36px);
