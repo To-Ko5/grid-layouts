@@ -385,3 +385,41 @@ label {
     }
   }
 }
+
+.footer {
+  &__top {
+    padding: 2rem;
+    background-color: thistle;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  &__logo {
+    background-color: skyblue;
+    width: 100%;
+    height: 200px;
+  }
+
+  &__bottom {
+    padding: 2rem;
+    text-align: center;
+  }
+  &__links {
+    & li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.sns {
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: sandybrown;
+    margin-bottom: 1rem;
+  }
+}
