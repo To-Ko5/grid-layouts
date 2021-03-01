@@ -40,9 +40,9 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template:
-    "header header header"
-    "left center right"
-    "footer footer footer";
+    "header header header" 100px
+    "left center right" 1fr
+    "footer footer footer" max-content;
 }
 
 .header {
