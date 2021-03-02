@@ -40,10 +40,12 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template:
-    "header header header" 100px
-    "left center right" 1fr
-    "footer footer footer" max-content
-    / 150px 1fr 180px;
+    "header header header header header" 100px
+    "..... ..... ..... ..... ....." 10px
+    "left ..... center ..... right" 1fr
+    "..... ..... ..... ..... ....." 10px
+    "footer footer footer footer footer" max-content
+    / 150px 10px 1fr 10px 180px;
 }
 
 .header {
