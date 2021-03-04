@@ -58,6 +58,7 @@ body {
 h1 {
   font-size: min(40px, 3vw); // min 小さいものが採用
   font-size: max(40px, 10vw); // max 最小値を設定
+  font-size: clamp(20px, 5vw, 70px); // clamp 最小値、推奨値、最大値を指定
 }
 
 .nav {
